@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial</title>
+</head>
+
+<body>
+    <h1>JavaScript Tutorial</h1>
+    <!--
+        dl : 定義リスト
+        dt : 定義する用語
+        dd : 用語の説明
+        https://html-coding.co.jp/annex/dictionary/html/dl/
+    -->
+
+    <dl>
+        <dt>今日の天気</dt>
+        <dd id="weather">晴れ</dd>
+    </dl>
+    <!--
+        冒頭にこのファイルを読み込むと"weather"がまだ未定義のため，この位置で読み込む．
+    -->
+    <script src="JavaScript/L6_dom.js"></script>
+
+    <dl>
+        <dt>今日の天気</dt>
+        <dd class="Weather">晴れ</dd>
+    </dl>
+    <script src="JavaScript/L6_dom.js"></script>
+</body>
+
+</html>
