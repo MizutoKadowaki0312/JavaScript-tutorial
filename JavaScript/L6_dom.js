@@ -26,3 +26,22 @@ console.log(element);
 
 // 6-7
 var element = document.querySelector(".weather");
+
+/*
+element.style.color = "#ff7c89";
+element.style.textDecoration = "underline";
+*/
+
+//上の書き方を1つに書き直す
+element.style.cssText = "color:#ff7c89; text-decoration:underline";
+var element = document.querySelector(".weather");
+element.className = "sample";
+
+// 6-8
+var element = document.createElement("p");
+var text = document.createTextNode("良いお天気ですね．");
+document.body.appendChild(element).appendChild(text);
+
+var element = document.getElementById("credit");
+var parent = element.parentElement;
+parent.removeChild(element);
